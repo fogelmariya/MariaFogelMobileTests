@@ -26,8 +26,6 @@ public class ContactInfoForm {
    *
    * - keyboard can be used
    *
-   * @param text - text for typing
-   * @param webElement - target text field
    */
   public void checkFieldsWithKeyboard(String text, WebElement webElement) {
     webElement.click();
