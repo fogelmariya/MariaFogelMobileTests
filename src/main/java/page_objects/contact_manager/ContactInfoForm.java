@@ -4,10 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import static enums.natives.ContactManagerEnum.*;
-import static enums.natives.ContactManagerEnum.CONTACT_EMAIL;
-import static enums.natives.ContactManagerEnum.CONTACT_NAME;
-import static enums.natives.ContactManagerEnum.CONTACT_PHONE;
+import static enums.natives.ContactManager_Enum.CONTACT_NAME;
+import static enums.natives.ContactManager_Enum.CONTACT_PHONE;
 import static setup.DriverSetup.getDriver;
 
 public class ContactInfoForm {
@@ -36,9 +34,6 @@ public class ContactInfoForm {
   /**
    * uses to check the Name Field and it`s title.
    *
-   * -right title
-   * -visible
-   * -enable
    */
   public void checkFormName() {
     //title
@@ -58,11 +53,9 @@ public class ContactInfoForm {
 
   /**
    * uses to check the Phone Field and it`s title.
-   * -right title
-   * -visible
-   * -enable
+   *
    */
-  public void checkPhoneForm() {
+  public void checkFormPhone() {
     //title
     contactPhoneTitle = getDriver().findElement(By.xpath(XPATH + "'Contact Phone']"));
     Assert.assertTrue(contactPhoneTitle.isDisplayed(), "Title of 'Contact Phone' text field is invisible");
@@ -79,11 +72,9 @@ public class ContactInfoForm {
 
   /**
    * uses to check the Phone Field and it`s title.
-   * -right title
-   * -visible
-   * -enable
+   *
    */
-  public void checkEmailForm() {
+  public void checkFormEmail() {
     //title
     contactEmailTitle = getDriver().findElement(By.xpath(XPATH + "'Contact Email']"));
     Assert.assertTrue(contactEmailTitle.isDisplayed(),  "Title of 'Contact Phone' text field is invisible");
@@ -98,6 +89,10 @@ public class ContactInfoForm {
     //checkFieldsWithKeyboard(CONTACT_EMAIL.user, contactEmailTextField);
   }
 
+  /**
+   * uses to check the submit button.
+   *
+   */
   public void checkSubmitButton() {
     submitButton = getDriver().findElement(By.id(PATH + "contactSaveButton"));
     Assert.assertTrue(submitButton.isDisplayed(),  "Submit button is invisible");

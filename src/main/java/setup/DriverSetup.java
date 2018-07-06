@@ -8,17 +8,17 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utile.ReadProperties;
 
-import static enums.driverSetup.BrowsersEnum.BROWSER_MASK;
-import static enums.driverSetup.BrowsersEnum.CHROME;
-import static enums.driverSetup.BrowsersEnum.SAFARI;
-import static enums.driverSetup.CommonInfoEnum.APP_MASK;
-import static enums.driverSetup.CommonInfoEnum.HOST_MASK;
-import static enums.driverSetup.CommonInfoEnum.URL_MASK;
-import static enums.driverSetup.CommonInfoEnum.HTTP_PREFIX;
-import static enums.driverSetup.PlatformsEnum.ANDROID;
-import static enums.driverSetup.PlatformsEnum.IOS;
-import static enums.driverSetup.PlatformsEnum.PLATFORM_MASK;
-import static enums.driverSetup.PlatformsEnum.UNKNOWN_PLATFORM;
+import static enums.driverSetup.Browsers_Enum.BROWSER_MASK;
+import static enums.driverSetup.Browsers_Enum.CHROME;
+import static enums.driverSetup.Browsers_Enum.SAFARI;
+import static enums.driverSetup.MaskPrefix_Enum.APP_MASK;
+import static enums.driverSetup.MaskPrefix_Enum.HOST_MASK;
+import static enums.driverSetup.MaskPrefix_Enum.URL_MASK;
+import static enums.driverSetup.MaskPrefix_Enum.HTTP_PREFIX;
+import static enums.driverSetup.Platforms_Enum.ANDROID;
+import static enums.driverSetup.Platforms_Enum.IOS;
+import static enums.driverSetup.Platforms_Enum.PLATFORM_MASK;
+import static enums.driverSetup.Platforms_Enum.UNKNOWN_PLATFORM;
 
 public class DriverSetup {
   private static DriverSetup ourInstance = new DriverSetup();

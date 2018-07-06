@@ -1,6 +1,6 @@
 package enums.web;
 
-public enum SitePageEnum {
+public enum Iana_org_Enum {
 
     HOME_LINK("www.iana.org/"),
     DOMAIN_LINK("www.iana.org/domains"),
@@ -13,7 +13,7 @@ public enum SitePageEnum {
 
     public String text;
 
-    SitePageEnum(String text) {
+    Iana_org_Enum(String text) {
         this.text = text;
     }
 }

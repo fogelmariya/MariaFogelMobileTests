@@ -1,13 +1,13 @@
 package enums.driverSetup;
 
-public enum BrowsersEnum {
+public enum Browsers_Enum {
     BROWSER_MASK("browserName"),
     CHROME("Chrome"),
     SAFARI("Safari");
 
     public final String text;
 
-    BrowsersEnum(String text) {
+    Browsers_Enum(String text) {
         this.text = text;
     }
 }

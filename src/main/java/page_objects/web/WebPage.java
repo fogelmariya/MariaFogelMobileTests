@@ -1,9 +1,9 @@
 package page_objects.web;
 
-import enums.driverSetup.CommonInfoEnum;
+import enums.driverSetup.MaskPrefix_Enum;
 import org.testng.Assert;
 
-import static enums.web.SitePageEnum.HOME_LINK;
+import static enums.web.Iana_org_Enum.HOME_LINK;
 import static setup.DriverSetup.getDriver;
 
 public class WebPage {
@@ -14,6 +14,6 @@ public class WebPage {
      */
     public void checkUrl(String url) {
         Assert.assertEquals(url, getDriver().getCurrentUrl());
-        getDriver().get(CommonInfoEnum.HTTPS_PREFIX.text + HOME_LINK.text);
+        getDriver().get(MaskPrefix_Enum.HTTPS_PREFIX.text + HOME_LINK.text);
     }
 }

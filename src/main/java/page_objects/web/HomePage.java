@@ -1,18 +1,17 @@
 package page_objects.web;
 
-import enums.driverSetup.CommonInfoEnum;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
-import static enums.driverSetup.CommonInfoEnum.HTTPS_PREFIX;
-import static enums.driverSetup.CommonInfoEnum.HTTP_PREFIX;
-import static enums.web.SitePageEnum.DOMAIN_LINK;
-import static enums.web.SitePageEnum.DOMAIN_NAMES_TITLE;
-import static enums.web.SitePageEnum.HOME_LINK;
-import static enums.web.SitePageEnum.NUMBER_RESOURCES_LINK;
-import static enums.web.SitePageEnum.NUMBER_RESOURCES_TITLE;
-import static enums.web.SitePageEnum.PROTOCOL_ASSIGNMENTS_TITLE;
+import static enums.driverSetup.MaskPrefix_Enum.HTTPS_PREFIX;
+import static enums.driverSetup.MaskPrefix_Enum.HTTP_PREFIX;
+import static enums.web.Iana_org_Enum.DOMAIN_LINK;
+import static enums.web.Iana_org_Enum.DOMAIN_NAMES_TITLE;
+import static enums.web.Iana_org_Enum.HOME_LINK;
+import static enums.web.Iana_org_Enum.NUMBER_RESOURCES_LINK;
+import static enums.web.Iana_org_Enum.NUMBER_RESOURCES_TITLE;
+import static enums.web.Iana_org_Enum.PROTOCOL_ASSIGNMENTS_TITLE;
 import static setup.DriverSetup.getDriver;
 import static setup.DriverSetup.getWebDriverWait;
 
@@ -34,7 +33,7 @@ public class HomePage extends WebPage {
   }
 
   /**
-   * check links functionality for 3 big blocks(DOMAIN_LINK, NUMBER_RESOURCES_LINK, PROTOCOL).
+   * check links functionality for 2 big blocks(DOMAIN_LINK, NUMBER_RESOURCES_LINK).
    * -check title name & other specifications of elements
    */
   public void checkPageLinks() {
@@ -57,8 +56,6 @@ public class HomePage extends WebPage {
 
   /**
    * check links functionality.
-   * -element is visible
-   * -element is enabled
    * -click
    * -move to other page
    * -check the link

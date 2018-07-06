@@ -1,6 +1,6 @@
 package enums.driverSetup;
 
-public enum CommonInfoEnum {
+public enum MaskPrefix_Enum {
     URL_MASK("sut"),
     HTTP_PREFIX("http://"),
     HTTPS_PREFIX("https://"),
@@ -9,7 +9,7 @@ public enum CommonInfoEnum {
 
     public final String text;
 
-    CommonInfoEnum(String text) {
+    MaskPrefix_Enum(String text) {
         this.text = text;
     }
 }

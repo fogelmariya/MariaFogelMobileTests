@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import page_objects.contact_manager.ContactAdditionForm;
 import page_objects.contact_manager.ContactInfoForm;
 
-import static enums.driverSetup.TestsSettingsEnum.NATIVES_PROPERTY;
+import static enums.driverSetup.Properties_Enum.NATIVES_PROPERTY;
 import static setup.DriverSetup.getDriver;
 import static setup.DriverSetup.prepareDriver;
 
@@ -45,8 +45,8 @@ public class ContactManagerTest {
     contactAdditionForm.checkAdditionalButton();
 
     contactInfoForm.checkFormName();
-    contactInfoForm.checkPhoneForm();
-    contactInfoForm.checkEmailForm();
+    contactInfoForm.checkFormPhone();
+    contactInfoForm.checkFormEmail();
     contactInfoForm.checkSubmitButton();
   }
 }

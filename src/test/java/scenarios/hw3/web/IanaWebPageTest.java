@@ -5,8 +5,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import page_objects.web.HomePage;
 
-import static enums.driverSetup.TestsSettingsEnum.WEB_PROPERTY;
-import static enums.web.SitePageEnum.HOME_PAGE_TITLE;
+import static enums.driverSetup.Properties_Enum.WEB_PROPERTY;
+import static enums.web.Iana_org_Enum.HOME_PAGE_TITLE;
 import static setup.DriverSetup.getDriver;
 import static setup.DriverSetup.getUrl;
 import static setup.DriverSetup.prepareDriver;

@@ -1,6 +1,6 @@
 package enums.driverSetup;
 
-public enum PlatformsEnum {
+public enum Platforms_Enum {
     PLATFORM_MASK("platformName"),
     ANDROID("Android"),
     IOS("iOS"),
@@ -8,7 +8,7 @@ public enum PlatformsEnum {
 
    public final String text;
 
-    PlatformsEnum(String text) {
+    Platforms_Enum(String text) {
         this.text = text;
     }
 }
