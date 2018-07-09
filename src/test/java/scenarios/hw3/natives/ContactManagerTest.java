@@ -5,10 +5,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import page_objects.contact_manager.ContactAdditionForm;
 import page_objects.contact_manager.ContactInfoForm;
+import setup.DriverSetup;
 
 import static enums.driverSetup.Properties_Enum.NATIVES_PROPERTY;
 import static setup.DriverSetup.getDriver;
-import static setup.DriverSetup.prepareDriver;
 
 public class ContactManagerTest {
   ContactAdditionForm contactAdditionForm;
@@ -22,7 +22,7 @@ public class ContactManagerTest {
     contactAdditionForm = new ContactAdditionForm();
     contactInfoForm = new ContactInfoForm();
     try {
-      prepareDriver(NATIVES_PROPERTY.text);
+      new DriverSetup(NATIVES_PROPERTY.text);
     } catch (Exception e) {
       e.printStackTrace();
     }
