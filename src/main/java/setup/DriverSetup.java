@@ -31,6 +31,10 @@ public class DriverSetup {
   private DriverSetup() {
   }
 
+  public DriverSetup(String property) throws Exception {
+    prepareDriver(property);
+  }
+
   public static AppiumDriver getDriver() {
     return driver;
   }
@@ -50,7 +54,7 @@ public class DriverSetup {
   /**
    * configure & init AppiumDriver
    */
-  static public void prepareDriver(String property) throws Exception {
+  private void prepareDriver(String property) throws Exception {
     properties = ReadProperties.getCurrentProp(property);
     capabilities = new DesiredCapabilities();
     if (properties != null) {
